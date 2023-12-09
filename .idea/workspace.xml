@@ -37,7 +37,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -66,6 +66,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ZeldaProjetoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="zelda-projeto.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zelda.zeldaprojeto.ZeldaProjetoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -85,7 +92,7 @@
       <workItem from="1702102174945" duration="1065000" />
       <workItem from="1702104117883" duration="510000" />
       <workItem from="1702104989696" duration="83000" />
-      <workItem from="1702105095467" duration="74000" />
+      <workItem from="1702105095467" duration="632000" />
     </task>
     <servers />
   </component>
