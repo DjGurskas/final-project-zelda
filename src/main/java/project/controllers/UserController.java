@@ -1,6 +1,7 @@
 package project.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import project.models.UserModel;
 import project.repository.UserRepository;
@@ -8,7 +9,7 @@ import project.repository.UserRepository;
 import java.util.List;
 
 @RestController
-@RequestMapping
+@RequestMapping("/users")
 public class UserController {
 
     @Autowired
@@ -18,15 +19,16 @@ public class UserController {
     public List<UserModel> getAllUsers() {
         return userRepository.findAll();
     }
-@GetMapping("/{id}")
+    @GetMapping("/{id}")
     public UserModel getUserById(@PathVariable Long id){
         return userRepository.findById(id).orElse(null);
     }
-@PostMapping
+    @PostMapping(value = "/adicionar", consumes = MediaType.APPLICATION_JSON_VALUE)
     public UserModel createUser(@RequestBody UserModel userModel){
+
         return userRepository.save(userModel);
     }
-@PutMapping("/{id}")
+    @PutMapping("/{id}")
     public UserModel updateUser(@PathVariable Long id, @RequestBody UserModel updateUser){
         UserModel existingUser =  userRepository.findById(id).orElse(null);
         if (existingUser != null){
@@ -36,8 +38,9 @@ public class UserController {
         }
         return null;
     }
-@DeleteMapping
+    @DeleteMapping
     public void deleteUser(@PathVariable Long id){
+
         userRepository.deleteById(id);
     }
 }

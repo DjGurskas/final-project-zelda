@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59f30ef2-4889-44ff-b9f0-5212c64d06d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/project/zelda/controllers/UserControllerTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/models/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/models/UserModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/java/ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/controllers/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +152,7 @@
       <workItem from="1702108033822" duration="4000" />
       <workItem from="1702108144251" duration="689000" />
       <workItem from="1702109244661" duration="5340000" />
-      <workItem from="1702153682905" duration="3503000" />
+      <workItem from="1702153682905" duration="5458000" />
     </task>
     <servers />
   </component>
