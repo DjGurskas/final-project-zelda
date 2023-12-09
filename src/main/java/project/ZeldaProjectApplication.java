@@ -1,13 +1,13 @@
-package com.project.zelda;
+package project;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ZeldaApplication {
+public class ZeldaProjectApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ZeldaApplication.class, args);
+		SpringApplication.run(ZeldaProjectApplication.class, args);
 	}
 
 }
