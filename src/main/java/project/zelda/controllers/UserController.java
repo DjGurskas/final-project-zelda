@@ -1,10 +1,10 @@
-package project.controllers;
+package project.zelda.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
-import project.models.UserModel;
-import project.repository.UserRepository;
+import project.zelda.models.UserModel;
+import project.zelda.repository.UserRepository;
 
 import java.util.List;
 

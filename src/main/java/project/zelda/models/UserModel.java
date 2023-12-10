@@ -1,4 +1,4 @@
-package project.models;
+package project.zelda.models;
 
 
 import jakarta.persistence.Entity;
