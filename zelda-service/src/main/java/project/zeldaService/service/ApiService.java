@@ -21,6 +21,10 @@ public class ApiService {
         this.baseUrl = baseUrl;
     }
 
+    public String getZeldaData() {
+        String url = "https://api.zelda.com/data";
+        return restTemplate.getForObject(url, String.class);
+    }
     public ResponseEntity<String> getGames(){
         String url = baseUrl + "/games";
         try {

@@ -5,29 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59f30ef2-4889-44ff-b9f0-5212c64d06d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/user-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/project/zelda/ZeldaProjectApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/project/zelda/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/project/zelda/models/UserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/project/zelda/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/test/java/com/project/zelda/ZeldaApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/test/java/com/project/zelda/controllers/UserControllerTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/project/zelda/controllers/GatewayController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/zelda/ZeldaProjectApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/zelda/controllers/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/zelda/models/UserModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/zelda/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/project/zelda/ZeldaApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/project/zelda/controllers/UserControllerTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zelda-service/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/project/zelda/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/project/zelda/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/project/zelda/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/project/zelda/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zelda-service/src/main/java/project/zeldaService/controller/ZeldaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zelda-service/src/main/java/project/zeldaService/controller/ZeldaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zelda-service/src/main/java/project/zeldaService/service/ApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zelda-service/src/main/java/project/zeldaService/service/ApiService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zelda-service/src/main/java/project/zeldaService/service/ZeldaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/zelda-service/src/main/java/project/zeldaService/service/ZeldaConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,10 +85,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.Application.executor": "Run",
     "Spring Boot.ZeldaProjectApplication.executor": "Run",
-    "git-widget-placeholder": "feat/query-api",
+    "git-widget-placeholder": "feat/gateway-api",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/djeni/Documents/GitHub/final-project-zelda/user-service",
+    "last_opened_file_path": "C:/Users/djeni/Documents/GitHub/final-project-zelda/zelda-service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -117,6 +102,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\djeni\Documents\GitHub\final-project-zelda" />
+    </key>
+  </component>
   <component name="RunManager" selected="Spring Boot.ZeldaProjectApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="final-project-zelda" />
@@ -182,6 +172,7 @@
       <workItem from="1702109244661" duration="5340000" />
       <workItem from="1702153682905" duration="5458000" />
       <workItem from="1702271762337" duration="288000" />
+      <workItem from="1702274100539" duration="2317000" />
     </task>
     <servers />
   </component>

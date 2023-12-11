@@ -1,15 +1,17 @@
 package project.zelda.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import project.zelda.models.UserModel;
 import project.zelda.repository.UserRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/api/users")
 public class UserController {
 
     @Autowired
@@ -17,30 +19,42 @@ public class UserController {
 
     @GetMapping
     public List<UserModel> getAllUsers() {
+
         return userRepository.findAll();
     }
     @GetMapping("/{id}")
-    public UserModel getUserById(@PathVariable Long id){
-        return userRepository.findById(id).orElse(null);
+    public ResponseEntity<UserModel> getUserById(@PathVariable Long id){
+        Optional<UserModel> userModel = userRepository.findById(id);
+        return userModel.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
-    @PostMapping(value = "/adicionar", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public UserModel createUser(@RequestBody UserModel userModel){
 
-        return userRepository.save(userModel);
+    @PostMapping
+    public ResponseEntity<UserModel> createUser(@RequestBody UserModel userModel){
+        UserModel savedUser = userRepository.save(userModel);
+        return ResponseEntity.status(HttpStatus.CREATED).body(savedUser);
     }
     @PutMapping("/{id}")
-    public UserModel updateUser(@PathVariable Long id, @RequestBody UserModel updateUser){
-        UserModel existingUser =  userRepository.findById(id).orElse(null);
-        if (existingUser != null){
+    public ResponseEntity<UserModel> updateUser(@PathVariable Long id, @RequestBody UserModel updateUser){
+        Optional<UserModel> optionalUser = userRepository.findById(id);
+        if (optionalUser.isPresent()) {
+            UserModel existingUser = optionalUser.get();
             existingUser.setName(updateUser.getName());
             existingUser.setAge(updateUser.getAge());
-            return userRepository.save(existingUser);
-        }
-        return null;
-    }
-    @DeleteMapping
-    public void deleteUser(@PathVariable Long id){
 
-        userRepository.deleteById(id);
+            UserModel updatedUser = userRepository.save(existingUser);
+            return ResponseEntity.ok(updatedUser);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteUser(@PathVariable Long id){
+        if (!userRepository.existsById(id)) {
+            return ResponseEntity.notFound().build();
+        }
+        userRepository.deleteById(id);
+        return ResponseEntity.noContent().build();
+    }
+
+
 }
