@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="59f30ef2-4889-44ff-b9f0-5212c64d06d4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/controllers/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,12 +22,7 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="demo" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -153,6 +147,8 @@
       <workItem from="1702108144251" duration="689000" />
       <workItem from="1702109244661" duration="5340000" />
       <workItem from="1702153682905" duration="5458000" />
+      <workItem from="1702272764532" duration="40000" />
+      <workItem from="1702272813143" duration="21000" />
     </task>
     <servers />
   </component>
