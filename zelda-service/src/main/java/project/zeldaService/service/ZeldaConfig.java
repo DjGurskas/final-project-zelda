@@ -9,9 +9,6 @@ public class ZeldaConfig {
 
     @Bean
     public RestTemplate restTemplate(){
-
         return new RestTemplate();
     }
-
-
 }

@@ -11,15 +11,14 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/users")
+@RequestMapping("api")
 public class UserController {
 
     @Autowired
     private UserRepository userRepository;
 
-    @GetMapping
+    @GetMapping("/users")
     public List<UserModel> getAllUsers() {
-
         return userRepository.findAll();
     }
     @GetMapping("/{id}")

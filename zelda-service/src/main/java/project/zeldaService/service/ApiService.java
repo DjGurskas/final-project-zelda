@@ -6,13 +6,14 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+import project.zeldaService.model.GamesIdModel;
+import project.zeldaService.model.GamesModel;
 
 
 @Service
 public class ApiService {
 
     private static final Logger logger = LoggerFactory.getLogger(ApiService.class);
-
     private final RestTemplate restTemplate;
     private final String baseUrl;
 
@@ -21,14 +22,10 @@ public class ApiService {
         this.baseUrl = baseUrl;
     }
 
-    public String getZeldaData() {
-        String url = "https://api.zelda.com/data";
-        return restTemplate.getForObject(url, String.class);
-    }
-    public ResponseEntity<String> getGames(){
+    public ResponseEntity<GamesModel> getGames(){
         String url = baseUrl + "/games";
         try {
-            ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
+            ResponseEntity<GamesModel> response = restTemplate.getForEntity(url, GamesModel.class);
             logger.info("Successfully retrieved games from Zelda API");
             return response;
         } catch (Exception e) {
@@ -37,10 +34,10 @@ public class ApiService {
         }
     }
 
-    public ResponseEntity<String> getGameById(long gameId) {
+    public ResponseEntity<GamesIdModel> getGameById(String gameId) {
         String url = baseUrl + "/games/" + gameId;
         try {
-            ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
+            ResponseEntity<GamesIdModel> response = restTemplate.getForEntity(url, GamesIdModel.class);
             logger.info("Successfully retrieved game with ID {} from Zelda API", gameId);
             return response;
         } catch (Exception e) {
