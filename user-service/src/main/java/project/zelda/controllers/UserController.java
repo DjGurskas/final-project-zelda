@@ -21,7 +21,7 @@ public class UserController {
     public List<UserModel> getAllUsers() {
         return userRepository.findAll();
     }
-    @GetMapping("/{id}")
+    @GetMapping("/user")
     public ResponseEntity<UserModel> getUserById(@PathVariable Long id){
         Optional<UserModel> userModel = userRepository.findById(id);
         return userModel.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
