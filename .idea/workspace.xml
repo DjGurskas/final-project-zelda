@@ -5,22 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59f30ef2-4889-44ff-b9f0-5212c64d06d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/zelda-service/src/main/java/project/zeldaService/model/GamesIdModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zelda-service/src/main/java/project/zeldaService/model/GamesModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zelda-service/src/main/java/project/zeldaService/model/ZeldaModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/project/zelda/ZeldaProjectApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/project/zelda/ZeldaProjectApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/project/zelda/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/project/zelda/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/project/zelda/models/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/project/zelda/models/UserModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/project/zelda/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/project/zelda/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/test/java/com/project/zelda/controllers/UserControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/test/java/com/project/zelda/controllers/UserControllerTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zelda-service/src/main/java/project/zeldaService/controller/ZeldaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zelda-service/src/main/java/project/zeldaService/controller/ZeldaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zelda-service/src/main/java/project/zeldaService/service/ApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zelda-service/src/main/java/project/zeldaService/service/ApiService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zelda-service/src/main/java/project/zeldaService/service/ZeldaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/zelda-service/src/main/java/project/zeldaService/service/ZeldaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zelda-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/zelda-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/java/project/zelda/ZeldaProjectApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/project/zelda/ZeldaGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/java/project/zelda/controllers/GatewayController.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +83,7 @@
     "git-widget-placeholder": "feat/gateway-api",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/djeni/OneDrive/Área de Trabalho/Javicha/Java/final-project/final-project-zelda/user-service",
+    "last_opened_file_path": "C:/Users/djeni/OneDrive/Área de Trabalho/Javicha/Java/final-project/final-project-zelda/gateway-service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

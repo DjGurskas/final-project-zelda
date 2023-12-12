@@ -27,12 +27,12 @@ public class UserController {
         return userModel.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    @PostMapping
+    @PostMapping("/create")
     public ResponseEntity<UserModel> createUser(@RequestBody UserModel userModel){
         UserModel savedUser = userRepository.save(userModel);
         return ResponseEntity.status(HttpStatus.CREATED).body(savedUser);
     }
-    @PutMapping("/{id}")
+    @PutMapping("/update")
     public ResponseEntity<UserModel> updateUser(@PathVariable Long id, @RequestBody UserModel updateUser){
         Optional<UserModel> optionalUser = userRepository.findById(id);
         if (optionalUser.isPresent()) {
@@ -46,7 +46,7 @@ public class UserController {
             return ResponseEntity.notFound().build();
         }
     }
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/delete")
     public ResponseEntity<Void> deleteUser(@PathVariable Long id){
         if (!userRepository.existsById(id)) {
             return ResponseEntity.notFound().build();
